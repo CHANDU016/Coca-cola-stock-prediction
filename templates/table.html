@@ -1,0 +1,16 @@
+<html>
+            <head>
+                <title>Cleaned Data</title>
+                <style>
+                    body { font-family: Arial; padding: 20px; }
+                    table { border-collapse: collapse; width: 100%; }
+                    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+                    th { background-color: #f2f2f2; }
+                </style>
+            </head>
+            <body>
+                <h2>✅ Cleaned Data</h2>
+                {{ table|safe }}
+            </body>
+        </html>
+    ''', table=table_html)

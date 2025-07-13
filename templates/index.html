@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coca-Cola Stock Predictor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url("/static/coca.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            backdrop-filter: blur(8px);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            text-shadow: 2px 2px #000;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label.upload-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #e60012;
+            color: white;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #ffffff;
+            color: #e60012;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🥤 Coca-Cola Stock Predictor</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="file" class="upload-btn">📁 Choose CSV File</label>
+            <input type="file" name="file" id="file" onchange="this.form.submit()">
+        </form>
+    </div>
+</body>
+</html>
