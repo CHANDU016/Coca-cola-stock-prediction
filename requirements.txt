@@ -1,7 +1,6 @@
 pip>=23.1
 setuptools>=65.5.0
 absl-py==2.1.0
-aiobotocore @ file:///C:/b/abs_a0zxrsvpwx/croot/aiobotocore_1714464454692/work
 aiohappyeyeballs @ file:///C:/b/abs_b505trsapr/croot/aiohappyeyeballs_1725434036096/work
 aiohttp @ file:///C:/b/abs_13j6efxjb7/croot/aiohttp_1725529348885/work
 aioitertools @ file:///tmp/build/80754af9/aioitertools_1607109665762/work
